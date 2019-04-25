@@ -1,0 +1,137 @@
+
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+\usepackage[super]{nth}
+\newcommand\Colorhref[3][cyan]{\href{#2}{\small\color{#1}#3}}
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Minh} % Your first name
+\familyname{Tran} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{11, 82 lane, Nguyen Khuyen}{Van Quan, Hanoi, Vietnam}
+%\mobile{(+82) 10 6665 6940}
+\mobile{(+84) 945 967 919}
+\email{tranngocminh139@gmail.com}
+\social[linkedin]{minh-ngoc-1309} 
+
+% \photo[90pt][0pt]{MinhPhoto.jpg} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Seeking a PhD Scholarship in a World Renowned University }
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+%---------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Area Interest}
+\cvitem{\textbf{}}{    
+	\begin{enumerate}
+		\item Bioinformatics, Computational Biology 
+		\item Data Science
+		\item Machine learning (Neural Network and Deep Learning)
+	\end{enumerate}
+}
+
+\section{Education}
+\cventry{2018--Sep 2018}{University of California - Davis, CA, USA}{}{}{}{\textbf{Visiting Scholar at Genome Center} \\ Project: Machine learning approaches for comparative genome structure analysis \\ \textit{Presented at American Society of Human Genetics conference}}
+\cventry{2016--2018}{Myongji Uninversity, South Korea}{}{}{}{\textbf{M.S. in Electronics Engineering} \\ Thesis: Generative Adversarial Network with Dark Channel Prior for Image Haze Removal. \\
+\textit{GPA -- 4.5/4.5}} 
+\cventry{2018}{Coursera, Online}{}{}{}{\textbf{Deep Learning Specialization} by Andrew Ng \\ \href{https://www.coursera.org/account/accomplishments/specialization/CWAPGWYM99JP}{Average Grade $95\%$}} 
+\cventry{2011--2015}{National Economics University, Hanoi, Vietnam}{}{}{}{\textbf{B.S. in Computer Science}\\Thesis: Route directions App for iOS device.\\
+\textit{GPA -- 7.5/10.0},  {ranking: \nth{5} out of 19}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\cventry{}{\underline{Minh N. Tran}, Park Dong Chul} {``\href{https://link.springer.com/article/10.1007/s11063-018-9794-8?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst}{Centroid Neural Network with Pairwise Constraints for Semi-supervised Learning}''}{Neural Processing Letters-Springer (Journal impact factor 1.620)}{(2017)}{}
+\cventry{}{Carlos Rojas, \underline{Minh N. Tran} , Linh Huynh, Fereydoun Hormozdiari}{``Machine learning approaches for comparative genome structure analysis''}{Poster at American Society of Human Genetics Annual Meeting (ASHG) in San Diego (2018)}{}{}
+
+
+\section{Research Experience}
+\cventry{Sep 2018--present}{Cinnamon Inc, Hanoi, Vietnam}{AI Engineer}{Working on many projects in Natural Language Processing. The projects scope are to the intelligence systems which extract name entity and classify the sentence of the legal bonding documents such as contracts and agreement. The solutions are different from project to project but the main approach is often starting from feature selection, tokenize the sentences followed by word embedding and eventually apply machine learning algorithm to solve. Many state of the arts deep learning model can also be adopted accordingly during out development prcess, such as Deep Bidirectional Transformers (BERT), Graph Convolutional Network, to find out the best solution for our products.}{}{}
+\cventry{2018--Sep 2018}{University of California-Davis, CA, Davis}{Visiting Scholar at Genome Center}{}{PI: Fereydoun Hormozdiari}{Participating in a research project about using machine learning to study the similarity and dissimilarity of the genome 3D structural map called High-throughput chromosome conformation (Hi-C) map. Hi-C matrix provides wealth data to study the 3D structure of the genome. The use of Hi-C matrix is to quantify the interactions between genomic loci that are nearby in 3D space. The project aims to identify the areas in two Hi-C matrix that have the most significant differences in sorted order. Since the distribution of frequency within the Hi-C matrix is very spare and bias to the chemical used during the experiment process, capturing the dissimilarities in high-level is a difficult challenge. Four different methods were used to find the dissimilar area between two Hi-C contact matrices including Principal Component Analysis (PCA), Root-mean-square (RMS), Pearson Correlation and Autoencoder. These methods are then benchmarked with each other to find the most desirable solution. We found that an autoencoder can quickly locate areas of interest, especially in areas off the diagonal. However, in areas near the diagonal (TAD) consists large changes in frequencies, which
+can easily be picked up by RMS and PCA}
+
+\cventry{2016--2018}{ICRL labs Myongji University, Yongin, Korea}{Research Assistant}{under Prof. Park Dong Chul supervisor}{}{}
+\cventry{}{Image Haze Removal with Deep Convolution Generative Adversarial Networks}{}{}{}{Haze removal with a single image and no side information is a challenge image processing task because the haze effects different part of the image with different degree. Deep convolutional generative adversarial networks (DCGANs) which were proved to be useful tool for single image super resolution(SISR), is ultized to perform image haze removal in this approach. An intensive comparison between using DCGANs and conventional image processing algorithm as well as image super resolution process are presented in this research to demonstrate the improvement of DCGANs. This project is carried out using Python and Keras, Tensorflow backend.}
+
+\cventry{}{Centroid Neural Network with Pairwise Constrained}{\small Based on Centroid Neural Network and Linear Constrained Vector Quantization Error (LCVQE)}{\small \textit{journal paper accepted and pending publication}}{\small Under guidance of Prof. Park Dong Chul, Myongji University, Yongin, South Korea}{This project is to develop a novel technique for constrained clustering which utilizes Cent.NN as its backbone algorithm for data clustering and adopts a semi-supervised learning process for pairwise constraints. The performance of the proposed algorithm is compared to that of the Linear Constrained Vector Quantization Error(LCVQE) algorithm, and other k-means based algorithm, commonly used algorithms for data clustering with pairwise constraints. It was accomplished using Python.}
+
+\cventry{}{Evalutaion of Intelligent Computing Methods}{\small Master foundation course}{}{}{Comparing different machine learning methods in extracting information of a given dataset. Adopting several conventional unsupervised learning algorithm such as K-means, Self-organising map(SOM), Fuzzy c-means(FCM), centroid neural network in experiments with data and images clustering task. Beside many experiments were also carried out with supervised learning algorithms to classify data with label, mainly focus on neural network based approach like multilayer perceptron(MLP) and convolutional neural networks(CNNs). For fair comparison, these methods are reimplemented form scratch using C++, Python.}
+
+% \cventry{June 2015 -- Dec 2015}{Savvycom SJC, Hanoi, Vietnam}{iOS Developer}{Working as the developer on many different outsourcing projects of the company. The projects requirements varied from shop management application to transfer signal and synchronize to data of wearable devices and iphone/ipad through Bluetooth Low Energy signal}{}{}
+
+\cventry{}{Virginia Commonwealth University, VA, USA}{Interactive Web Tools for Visualizing and Analyzing Social/Biological Networks}{\small Working with Prof. Thang Dinh }{}{Big and complex data in social media sites such as Instagram, Facebook and Twitter demand new set of tools that enable users to gain knowledge in a visual and interactive manner. This project aims to construct highly interactive and elegant graphical user interface to analyze complex social and biological networks. In contrast to existing desktop-applications that require installation, this web-based project will be widely-accessible to all users with a web-browsers. The project will utilize modern graph drawing libraries and graph database such as SigmaJs, LinkuriousJs, and Neo4j. Thus it will take less effort for students with some background on HTML, Javascript, and Server-side scripting.}
+
+\cventry{2011 -- 2015}{National Economics University, Hanoi, Vietnam}{}{}{}{}
+\cventry{}{Route directions App for iOS device}{\small Bachelor Thesis }{}{}{Using Xcode and Objective-C to program and Google Maps SDK, this application gathers information about the origin place and destination from users and post a request to web service, then analyses data that received from Google direction API and show the best route direction on the screen. This project is programmed using Objective-C and Sqlite database.}
+
+\cventry{}{Association Rule Learning}{\small Senior student individual project}{}{}{That project required to make a research about association rule and related algorithms - Apriori, Eclat and FP-Growth. The goal of that project was to identify how useful association rule learning can be adopted in discovering the relation between sets of items in large databases.}
+
+
+% \cventry{}{Virtual Private Network Study}{\small Junior student individual project}{}{}{This project was to make a research about documents related to overall VPN architecture, types of VPNs(access, intranet, extranet VPNs), IPsec and OpenVPN.}
+
+%----------------------------------------------------------------------------------------
+%	Achievements Honors
+%----------------------------------------------------------------------------------------
+\section{Achievements Honors}
+\cvitem{2011, 2014}{\textbf{Excellent Academic Performance Scholarship,} \textit{} National Economics University, Hanoi.}
+\cvitem{2011, 2015}{\textbf{Certificate of Achievement,} \textit{for excellent contribution in Youth Union activities,} Executive Committee of the Youth Union of National Economics , Hanoi.}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\cvitem{Programming Languages}{{Python}, {\LaTeX{}}, {C/C++}, {R}, {C\#}, {Objective C}, {Java}}
+\cvitem{Open Source Library}{{Tensorflow}, {Keras}, {scikit-learn}, {numpy}, {OpenCV}...}
+\cvitem{Database}{MySQL, SQL server, SQLite}
+\cvitem{Development Tools}{Microsoft Visual Studio, Xcode, Git(GitHub), PyCharm, Jupyter Notebook, TeXstudio}
+\cvitem{OS}{Linux, OSX, Window}
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages and Certificates}
+\cvlistdoubleitem{{English: IELTS score 7.0}} {Vietnamese: Native Speaker}
+\cvlistdoubleitem{{GRE: Quant 164/170, Verbal 132/170}}{}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\bigskip
+%\cvlistdoubleitem{}{}
+%\cvlistdoubleitem{}{}
+%\cvlistdoubleitem{Robotics}{}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+\section{References}
+\cvitem{}{References available upon request.}
+
+\end{document}
