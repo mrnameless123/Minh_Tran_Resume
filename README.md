@@ -3,5 +3,5 @@ My personal Resume in Latex
 
 This is a line of code
 ```
-sudo apt update
+$ sudo apt update
 ```
